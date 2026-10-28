@@ -1,4 +1,5 @@
 <Project>
+  <Import Project="../Directory.Build.props" />
   <PropertyGroup>
     <RepoRoot Condition="'$(RepoRoot)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../../'))</RepoRoot>
     <GameRoot Condition="'$(GameRoot)' == ''">$(BEAT_SABER_DIR)</GameRoot>
